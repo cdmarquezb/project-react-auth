@@ -16,6 +16,7 @@ const mount = (el, { onSignIn, onNavigate, defaultHistory, initialPath, onPop })
     history.listen(onNavigate);
   }
 
+  console.log("Mouting React Auth");
   ReactDOM.render(<App onSignIn={onSignIn} history={history} onPop={onPop} />, el);
 
   return {
